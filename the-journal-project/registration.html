@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<script type="text/javascript" src="JS/registration.js"></script>
+	<link rel="stylesheet" type="text/css" href="CSS/registration.css">
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+<body style="background:url(IMAGES/login-bg.jpg)no-repeat; background-size: cover; opacity:0.8;">
+	<header class="top">
+		<div class="cen">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#" title="Having some issues with blog? E-mail us right away and we will take care of it.">Contact Us</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="registration.html">Register</a></li>
+			</ul>
+		</div>
+	</header>
+	<form method="POST" action="login.html" onsubmit="return checkpassword(this)">
+	<div class="login-box">
+		<h1>Registration</h1>
+		<div class="textbox">
+			<input type="text" placeholder="Name" name="Name" required>
+		</div>
+		<div class="textbox">
+			<input type="text" placeholder="Username" name="Username" required>
+		</div>
+		<div class="textbox">
+			<input type="password" placeholder="Password" name="password" pattern=".{5,10}" required title="Password must be between 5 to 10 characters long">
+		</div>
+		<div class="textbox">
+			<input type="password" placeholder="Confirm Password" name="password1" pattern=".{5,10}" required title="Password must be between 5 to 10 characters long">
+		</div>
+		<div class="textbox">
+			<input type="email" placeholder="E-mail" name="Email" required>
+		</div>
+			<div class="container">
+				<label class="birthday" for="birthday">Birthday:</label>
+			<input class = "date"type="date" name="birthday">
+	</div>
+	<button class="btn" type="submit" onclick="checkpassword() alert_fun()">Sign Up</button>
+</div>
+</form>
+</body>
+</html>
